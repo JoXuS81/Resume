@@ -1,0 +1,99 @@
+/*
+
+
+*****************
+Table of Contents
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Loader 
+ 4.1 Dots
+
+
+ */
+
+
+/*  ***** FONTS *****  */
+@font-face {
+    font-family:archivo_narrow;
+    src:url("../Fonts/Archivo Narrow/ArchivoNarrow-Regular.ttf");
+}
+@font-face {
+    font-family:poppins;
+    src:url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+
+/*  ***** MIXINS *****  */
+@mixin h1 {
+    color:$light;
+    font-size:45px;
+    font-weight:bold;
+}
+@mixin h2 {
+    color:$light;
+    font-size:35px;
+}
+@mixin h3 {
+    font-size:30px;
+}
+
+
+/*  ***** VARIABLES *****  */
+$blue:#37ABBB;
+$colors:$blue, #afcaff, #c3deff, #e6f3ff, $light;
+$dark:#000000;
+$grey:#DCEBEA;
+$light:#ffffff;
+$middledark:rgba(0,0,0,0.95);
+
+
+@keyframes wave {
+    50%, 75% {
+        transform: scale(2.5);
+    }
+    80%, 100% {
+        opacity: 0;
+    }
+}
+
+
+/*  ***** LOADER *****  */
+.loader {
+    animation-delay:1s;
+    background:$dark;
+    height:100vh;
+    width:100%;
+    .loader_content {
+
+        /*  ***** Dots *****  */
+        .loader_dot {
+            border-radius:50%;
+            display:inline-block;
+            height:32px;
+            margin:0.8em;
+            position:relative;
+            width:32px;
+            &::before {
+                animation:wave 2s ease-out infinite;
+                background:inherit;
+                border-radius:inherit;
+                content:"";
+                height:100%;
+                position:absolute;
+                width:100%;
+            }
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    background: nth($colors, $i);
+                    &::before {
+                        animation-delay: $i * 0.2s;
+                    }
+                }
+            }
+        }
+
+    }
+}

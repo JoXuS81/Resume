@@ -1,0 +1,166 @@
+/*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. About 
+ 4.1 Download, Button
+ 4.2 Frontend Developer, Large Letters
+ 4.3 Info Area 
+ 4.4 Heading/H1
+ 4.5 Heading
+
+
+*/
+
+
+/*  ***** FONTS *****  */
+@font-face {
+    font-family:archivo_narrow;
+    src:url("../Fonts/Archivo Narrow/ArchivoNarrow-Regular.ttf");
+}
+@font-face {
+    font-family:poppins;
+    src:url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+
+/*  ***** MIXINS *****  */
+@mixin h1 {
+    color:$light;
+    font-size:45px;
+    font-weight:bold;
+}
+@mixin hide {
+    display:none;
+}
+
+
+/*  ***** VARIABLES *****  */
+$blue:#37ABBB;
+$dark:#000000;
+$light:#ffffff;
+
+
+/*  ***** ABOUT *****  */
+.about {
+    @include hide;
+    background:$dark;
+    width:90%;
+    .about_content {
+        margin-bottom:100px;
+        margin-top:132px;
+        width:80%;
+
+        /*  ***** Download, Button *****  */
+        .about_cv {
+            height:70px;
+            margin-top:66px;
+            width:200px;
+            a {
+                background:$blue;
+                color:$light;
+                font-family:poppins;
+                font-size:25px;
+                padding-bottom:26px;
+                padding-left:13px;
+                padding-right:13px;
+                padding-top:26px;
+                &:hover {
+                    color:$dark;
+                    text-decoration:none;
+                }
+            }
+        }
+
+        /*  ***** Frontend Developer, Large Letters *****  */
+        .about_frontend {
+            color:$blue;
+            font-family:archivo_narrow;
+            font-size:40px;
+        }
+
+        h4 {
+            color:$light;
+            font-family:poppins;
+            font-size:23px;
+            margin-top:22px;
+        }
+
+        /*  ***** Info Area *****  */
+        .about_info {
+            color:$blue;
+            font-size:20px;
+            font-weight:bold;
+            margin-top:55px;
+            br {
+                display:block;
+            }
+            .about_span {
+                color:$light;
+                font-weight:normal;
+            }
+        }
+
+        .about_infoMargin {
+            margin-top:58px;
+        }
+        .about_line {
+            background:$light;
+            height:3px;
+            margin-top:30px;
+            width:100%;
+        }
+    }
+
+    /*  ***** Heading/h1 *****  */
+    h1 {
+        @include h1;
+    }
+
+    /*  ***** Heading *****  */
+    .about_hea {
+        margin-top:80px;
+        .about_border {
+            margin-top:25px;
+            .about_ellipse {
+                background:$light;
+                border:1px solid $light;
+                border-radius:50%;
+                display:inline-block;
+                height:7px;
+                margin-left:5px;
+                margin-right:5px;
+                width:7px;
+            }
+            .about_lineLeft {
+                background:$light;
+                display:inline-block;
+                height:7px;
+                width:50px;
+            }
+            .about_lineRight {
+                background:$blue;
+                display:inline-block;
+                height:7px;
+                width:50px;
+            }
+        }
+        .about_heading {
+            font-family:poppins;
+        }
+    }
+
+    span {
+        color:$blue;
+    }
+    .about_top {
+        height:1px;
+        width:100%;
+    }
+}

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<!-- Website/Template Language -->
+<html lang = "en">
+
+
+    <head>
+        <meta charset = "utf-8">
+
+        <!-- Description, important for SEO -->
+        <meta name = "description" content = "I am Dylan Rossi, frontend developer.">
+
+        <!-- Keywords -->
+        <meta name = "keywords" content = "Frontend, Developer, Development, Web, HTML, CSS, JavaScript, Apps">
+
+        <!-- Suiting for different device sizes -->
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <link rel = "icon" type = "image/png" href = "Images/Title/Title_Logo.png">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-grid.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-grid.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-reboot.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-reboot.min.css">
+        <link rel = "stylesheet" href = "SCSS_CSS/style.css">
+        <link rel = "stylesheet" href = "SCSS_CSS/responsive.css">
+        <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity = "sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin = "anonymous">
+        <title>
+            Resume - Jovan Stanisic
+        </title>
+
+
+<!-- 
+        
+******************        
+COPYRIGHT, SOURCES
+****************** 
+
+1. Home, Background Image        -> https://unsplash.com/photos/9SoCnyQmkzI   (Jefferson Santos) 
+2. Home, Circled Image           -> https://unsplash.com/photos/K84vnnzxmTQ   (Leilani Angel)
+3. Create Circled Image          -> http://crop-circle.imageonline.co/
+4. Take Fonts from Webpage       -> Fount
+5. Fonts                         -> Google Fonts
+6. Facebook Logo                 -> Flaticon
+7. Twitter Logo                  -> Flaticon
+8. Linkedin Logo                 -> Flaticon
+9. Instagram Logo                -> Flaticon
+10. Fonts Similar to Helvetica   -> Google
+11. New York Street              -> https://citytalestours.com/blogs/new-yorks-most-famous-streets
+12. Section Projects, Image 1    -> Unsplash (Sara Kurfeß)
+13. Section Projects, Image 2    -> https://unsplash.com/photos/cJDwJ4X2IrQ   (Sara Kurfeß)
+14. Section Projects, Image 3    -> https://unsplash.com/photos/ir5lIkVFqC4   (William Iven)
+15. Section Projects, Image 4    -> https://unsplash.com/photos/i5UV2HpITYA   (Erick Cerritos)
+16. Section Projects, Image 5    -> https://unsplash.com/photos/_sg8nXmpWDM   (NordWood Themes)
+17. Section Projects, Image 6    -> https://unsplash.com/photos/MQI75GpnuNk   (Angelo Pantazis)
+18. Crop Images                  -> ImageResizer	
+19. Section Blog, Image 1        -> https://unsplash.com/photos/m_HRfLhgABo   (Christopher Gower)
+20. Section Blog, Image 2        -> https://unsplash.com/photos/J7xrBW_oYJc   (Lorenzo Rui)
+21. Prototype                    -> Figma
+22. Sass Imports                 -> https://sass-lang.com/documentation/at-rules/import
+23. Corrections in Code          -> Visual Studio Code
+24. Responsive Background Image  -> https://stackoverflow.com/questions/12609110/responsive-css-background-images  (Pnsadeghy)
+25. Double Borders               -> https://www.impressivewebs.com/multiple-borders-css/
+26. Hex to Rgba                  -> http://hex2rgba.devoth.com/
+27. jQuery, Hide and Show        -> https://www.w3schools.com/jquery/jquery_hide_show.asp
+28. jQuery, Select class         -> https://www.tutorialspoint.com/jquery/selector-element-class.htm
+29. Change Colors, jQuery        -> https://www.w3schools.com/jquery/css_css.asp
+30. Bootstrap Float              -> https://getbootstrap.com/docs/4.0/utilities/float/
+31. Form Inputs                  -> https://www.w3schools.com/html/html_form_input_types.asp
+32. Textarea Inputs              -> https://www.w3schools.com/tags/tag_textarea.asp
+33. CV Inspiration               -> https://creativemarket.com/bilmaw/275131-ResumeCV-Jamie
+34. Coding in 2020, Text         -> https://websitesetup.org/web-design-software/
+35. Blog, Instagram Image        -> https://unsplash.com/photos/zNRITe8NPqY  (Kevin Bhagat)		
+36. Blog, Instagram Image        -> https://unsplash.com/photos/1SAnrIxw5OY  (Kari Shea)
+37. Blog, Instagram Image        -> https://unsplash.com/photos/PypjzKTUqLo  (Roman Bozhko)
+38. Blog, Instagram Image        -> https://unsplash.com/photos/1nInzk7c0hg  (Markus Spiske)
+39. Mobile Apps, Text            -> https://medium.com/@prudhvir3ddy/become-an-android-app-developer-by-2020-d17b4f07e290
+40. Mobile Apps, Instagram       -> https://unsplash.com/photos/D4w5bkV5E4k  (Morning Brew)
+41. Mobile Apps, Instagram       -> https://unsplash.com/photos/wXU9yeANElg  (Sara Kurfeß)
+42. Mobile Apps, Instagram       -> https://unsplash.com/photos/lIrA5Ikw9wo  (David Grandmougin)
+43. Mobile Apps, Instagram       -> https://unsplash.com/photos/X8WQD0UYsfA  (alex bracken)
+44. Sticky Header                -> https://www.w3schools.com/howto/howto_js_sticky_header.asp
+45. Sticky Header                -> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sticky_header
+46. Sticky Header                -> https://codepen.io/JGallardo/pen/lJoyk
+47. Change Color in JavaScript   -> https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp
+48. CSS Animations               -> https://www.w3schools.com/css/css3_animations.asp
+49. Loader                       -> https://codepen.io/alphardex/pen/XWWWBmQ
+50. Color Wheel                  -> https://www.sessions.edu/color-calculator/
+51. jQuery, Delay                -> https://api.jquery.com/delay/
+52. Hamburger Menu               -> https://www.youtube.com/watch?v=BN6fH1nRDxA
+53. Remove Class                 -> https://www.w3schools.com/jquery/html_removeclass.asp
+54. Reset Page to Top            -> https://stackoverflow.com/questions/11486527/reload-browser-does-not-reset-page-to-top (Nikola Anusev)
+55. Image, Horizontal Centering  -> https://www.w3schools.com/css/css_align.asp
+56. Convert EM to PX             -> http://pxtoem.com/
+        
+-->
+
+
+<!-- 
+        
+-->
+
+<!-- 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+1. Loader 
+ 1.1 Dots
+
+2. Home 
+ 2.1 Hamburger Menu 
+ 2.2 Logo 
+ 2.3 Navbar 
+ 2.4 Image Info and Social Icons 
+
+3. About 
+ 3.1 Heading 
+ 3.2 Image 
+ 3.3 Right Side Info 
+
+4. Projects 
+ 4.1 Heading 
+ 4.2 Filter Navbar 
+ 4.3 Images
+
+5. Blog
+ 5.1 Heading 
+ 5.2 Coding in 2020 Area
+ 5.3 Mobile Apps Area
+
+6. Contact
+ 6.1 Heading 
+ 6.2 Contact Info 
+ 6.3 Contact Form
+
+7. Footer 
+ 7.1 Logo 
+ 7.2 Social Icons  
+ 7.3 Copyright Info 
+
+8. JavaScript Connections 
+  
+-->
+    </head>
+
+
+    <body>
+
+
+        <div class = "d-flex justify-content-center">
+            
+            <!-- LOADER -->
+            <section class = "loader">
+
+                <!-- To Pass W3C Validation -->
+                <h1 class = "d-none">
+                    HTML Validation
+                </h1>
+
+                <div class = "d-flex justify-content-center align-items-center h-100 loader_content">
+
+                    <!-- Dots -->
+                    <div>
+                        <div class = "loader_dot">
+                        </div>
+                        <div class = "loader_dot">
+                        </div>
+                        <div class = "loader_dot">
+                        </div>
+                        <div class = "loader_dot">
+                        </div>
+                        <div class = "d-none d-sm-inline-block loader_dot">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- HOME -->
+            <section class = "home" id = "home_anchor">
+                <div class = "home_content">
+
+                    <!-- Hamburger Menu -->
+                    <div class = "home_hamburger">
+                        <div class = "home_line home_lineTop">
+                        </div>
+                        <div class = "home_line home_lineMiddle">
+                        </div>
+                        <div class = "home_line home_lineBottom">
+                        </div>
+                    </div>
+
+                    <div class = "row m-0 p-0 home_lo">
+
+                        <!-- Logo -->
+                        <div class = "col-xl-6 m-0 p-0">
+                            <a href = "#" class = "home_logo">
+                                <h2 class = "p-0 home_portfolix">
+                                    J<span class = "m-0 p-0">S</span> 
+                                </h2>
+                            </a>
+                        </div>
+
+                        <!-- Navbar -->
+                        <div class = "col-xl-6 d-flex justify-content-end align-items-center m-0 p-0">
+                            <div class = "pr-0 pb-0 pl-0 home_menu">
+                                <div class = "home_mobile">
+                                    <div>
+                                        <ul>
+                                            <li class = "home_ho">
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#home_anchor" class = "home_click">
+                                                        Home
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#about_anchor" class = "home_click">
+                                                        About
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#projects_anchor" class = "home_click">
+                                                        Projects
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#blog_anchor" class = "home_click">
+                                                        Blog
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#contact_anchor" class = "home_click">
+                                                        Contact
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Image Info and Social Icons -->
+                    <div class = "row mr-0 mb-0 ml-0 p-0 d-flex justify-content-center align-items-center h-100 home_info">
+                        <div>
+                            <div class = "home_image">
+                                <img class = "img-fluid home_man" src = "Images/Home/Home_Man.png" alt = "Man">
+                            </div>
+                            <h2 class = "text-center home_developer">
+                                JOVAN STANISIC
+                            </h2>
+                            <h4 class = "text-center home_frontend">
+                                FRONTEND DEVELOPER
+                            </h4>
+                            <div class = "d-flex justify-content-center home_social">
+                                <div>
+                                    <a href = "https://www.facebook.com/jovan.stanisic.94">
+                                        <img class = "img-fluid" src = "Images/Home/Home_Facebook.png" alt = "Facebook Logo">
+                                    </a>
+                                    <a href = "https://twitter.com/JOVANSTANII">
+                                        <img class = "img-fluid" src = "Images/Home/Home_Twitter.png" alt = "Twitter Logo">
+                                    </a>
+                                    <a href = "https://www.linkedin.com/in/jovan-stani%C5%A1i%C4%87-a9949b141/">
+                                        <img class = "img-fluid" src = "Images/Home/Home_Linkedin.png" alt = "Linkedin Logo">
+                                    </a>
+                                    <a href = "https://www.behance.net/jst2016b3e2">
+                                        <img class = "img-fluid" src = "Images/Home/Home_Instagram.png" alt = "Instagram Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- ABOUT -->
+            <section class = "about" id = "about_anchor">
+                <div class = "about_top">
+                </div>
+
+                <!-- Heading -->
+                <div class = "d-flex justify-content-center about_hea">
+                    <div>
+                        <h1 class = "text-center m-0 p-0 about_heading">
+                            About <span>Me</span>
+                        </h1>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "about_border">
+                                <div class = "about_lineLeft">
+                                </div>
+                                <div class = "about_ellipse">
+                                </div>
+                                <div class = "about_lineRight">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "d-flex justify-content-center">
+                    <div class = "row mr-0 ml-0 p-0 about_content">
+
+                        <!-- Image -->
+                        <div class = "col-xl-6 d-flex justify-content-start m-0 p-0">
+                            <img class = "img-fluid" src = "Images/About/About_Man.png" alt = "Man">
+                        </div>
+
+                        <div class = "col-xl-6 m-0 p-0 d-flex align-items-center">
+
+                            <!-- Right Side Info -->
+                            <div>
+                                <h1 class = "mr-0 mb-0 ml-0 p-0 about_frontend">
+                                    I am a Frontend Developer.
+                                </h1>
+                                <h4>
+                                    I am a frontend developer with more than five years of experience. My main skills are in HTML, CSS, SCSS and Illustrator/Figma. I know that my knowledge is just a drop in the ocean and I work hard to achieve excellent results in frontend development.
+                                </h4>
+                                <div class = "about_line">
+                                </div>
+                                <div class = "row m-0 p-0">
+                                    <div class = "col-xl-6 m-0 p-0">
+                                        <h4 class = "about_info">
+                                            Address: 
+                                            <br>
+                                            <span class = "about_span">
+                                                Banja Luka, BiH 
+                                            </span>
+                                        </h4>
+                                        <h4 class = "about_info about_infoMargin">
+                                            Email: 
+                                            <br>
+                                            <span class = "about_span">
+                                                jst2016@mail.com
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div class = "col-xl-6 d-flex justify-content-xl-end justify-content-lg-start m-0 p-0">
+                                        <div>
+                                            <h4 class = "about_info">
+                                                Phone: 
+                                                <br>
+                                                <span class = "about_span">
+                                                    +387 65 520 406
+                                                </span>
+                                            </h4>
+                                            <h4 class = "about_info about_infoMargin">
+                                                Street: 
+                                                <br>
+                                                <span class = "about_span">
+                                                    Miloša Obilića 21
+                                                </span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "about_cv">
+                                    <a href = "PDF/Resume.pdf">
+                                        Resume
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- PROJECTS -->
+            <section class = "projects" id = "projects_anchor">
+                <div class = "projects_top">
+                </div>
+
+                <!-- Heading -->
+                <div class = "d-flex justify-content-center projects_hea">
+                    <div>
+                        <h1 class = "text-center m-0 p-0 projects_heading">
+                            My <span>Projects</span>
+                        </h1>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "projects_border">
+                                <div class = "projects_lineLeft">
+                                </div>
+                                <div class = "projects_ellipse">
+                                </div>
+                                <div class = "projects_lineRight">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Navbar -->
+                <div class = "d-flex justify-content-center">
+                    <ul>
+                        <li>
+                            <h3 class = "projects_all">
+                                All
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class = "projects_applications">
+                                Recent
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class = "projects_des">
+                                HTML/SCSS
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class = "projects_dev">
+                                React
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Images -->
+                <div class = "d-flex justify-content-center">
+                    <div class = "row m-0 pt-0 pr-0 pl-0 projects_images">
+                        <div class = "col-xl-6 d-flex justify-content-xl-end justify-content-center m-0 p-0 projects_left">
+                            <div class = "w-75">
+                                <img class = "img-fluid projects_app projects_img" src = "Images/Projects/Projects_App.png" alt = "Mobile">
+                            </div>
+                        </div>
+                        <div class = "col-xl-6 d-flex justify-content-xl-start justify-content-center m-0 p-0 projects_right">
+                            <div class = "w-75">
+                                <img class = "img-fluid projects_app projects_img" src = "Images/Projects/Projects_Twitter.png" alt = "Mobile">
+                            </div>
+                        </div>
+                        <div class = "col-xl-6 d-flex justify-content-xl-end justify-content-center m-0 p-0 projects_left">
+                            <div class = "w-75">
+                                <img class = "img-fluid projects_laptop projects_img" src = "Images/Projects/Projects_Laptop.png" alt = "Laptop">
+                            </div>
+                        </div>
+                        <div class = "col-xl-6 d-flex justify-content-xl-start justify-content-center m-0 p-0 projects_right">
+                            <div class = "w-75">
+                                <img class = "img-fluid projects_laptop projects_img" src = "Images/Projects/Projects_LaptopSilver.png" alt = "Laptop">
+                            </div>
+                        </div>
+                        <div class = "col-xl-6 d-flex justify-content-xl-end justify-content-center m-0 p-0 projects_left">
+                            <div class = "w-75">
+                                <img class = "img-fluid projects_design projects_img" src = "Images/Projects/Projects_Design.png" alt = "Desktop">
+                            </div>
+                        </div>
+                        <div class = "col-xl-6 d-flex justify-content-xl-start justify-content-center m-0 p-0 projects_right">
+                            <div class = "w-75">
+                                <img class = "img-fluid projects_design projects_img" src = "Images/Projects/Projects_DesignScreen.png" alt = "Desktop">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- BLOG -->
+            <section class = "blog" id = "blog_anchor">
+                <div class = "blog_top">
+                </div>
+
+                <!-- Heading -->
+                <div class = "d-flex justify-content-center blog_hea">
+                    <div>
+                        <h1 class = "text-center m-0 p-0 blog_heading">
+                            My <span>Blog</span>
+                        </h1>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "blog_border">
+                                <div class = "blog_lineLeft">
+                                </div>
+                                <div class = "blog_ellipse">
+                                </div>
+                                <div class = "blog_lineRight">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "row mr-0 mb-0 ml-0 p-0 blog_content">
+
+                    <!-- Coding in 2020 Area -->
+                    <div class = "col-xl-6">
+                        <div class = "d-flex justify-content-center">
+                            <img class = "img-fluid blog_img" src = "Images/Blog/Blog_Coding.jpg" alt = "Coding">
+                        </div>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "blog_background">
+                                <h3 class = "text-center">
+                                    Web Development Tools in 2020
+                                </h3>
+                                <div class = "blog_line">
+                                </div>
+                                <div class = "row m-0 p-0">
+                                    <div class = "col-12 col-sm-6 m-0 p-0 blog_calen">
+                                        <div class = "mr-0 mb-0 ml-0 p-0 blog_time">
+                                            <img class = "img-fluid blog_calendar" src = "Images/Blog/Blog_Calendar.png" alt = "Calendar">
+                                            <h5 class = "blog_date">
+                                                05 August 2020
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class = "col-12 col-sm-6 m-0 p-0 blog_opinions">
+                                        <div class = "float-sm-right float-none blog_comments">
+                                            <img class = "img-fluid blog_comm" src = "Images/Blog/Blog_Comments.png" alt = "Comments">
+                                            <h5 class = "blog_opinion">
+                                                0 Comments
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        I work with several web design tools in 2020. I am using...
+                                    </h4>
+                                    <a href = "HTML/coding.html">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Apps Area -->
+                    <div class = "col-xl-6">
+                        <div class = "d-flex justify-content-center">
+                            <img class = "img-fluid blog_img" src = "Images/Blog/Blog_Apps.jpg" alt = "Apps">
+                        </div>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "blog_background">
+                                <h3 class = "text-center">
+                                    Prototyping - Figma
+                                </h3>
+                                <div class = "blog_line">
+                                </div>
+                                <div class = "row m-0 p-0">
+                                    <div class = "col-12 col-sm-6 m-0 p-0 blog_calen">
+                                        <div class = "mr-0 mb-0 ml-0 p-0 blog_time">
+                                            <img class = "img-fluid blog_calendar" src = "Images/Blog/Blog_Calendar.png" alt = "Calendar">
+                                            <h5 class = "blog_date">
+                                                07 August 2020
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class = "col-12 col-sm-6 m-0 p-0 blog_opinions">
+                                        <div class = "float-sm-right float-none blog_comments">
+                                            <img class = "img-fluid blog_comm" src = "Images/Blog/Blog_Comments.png" alt = "Comments">
+                                            <h5 class = "blog_opinion">
+                                                0 Comments
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        I believe that Figma is an excellent tool for prototyping. No need for...
+                                    </h4>
+                                    <a href = "HTML/mobile.html">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- CONTACT -->
+            <section class = "contact" id = "contact_anchor">
+                <div class = "contact_top">
+                </div>
+
+                <!-- Heading -->
+                <div class = "d-flex justify-content-center contact_hea">
+                    <div>
+                        <h1 class = "text-center m-0 p-0 contact_heading">
+                            Contact <span>Me</span>
+                        </h1>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "contact_border">
+                                <div class = "contact_lineLeft">
+                                </div>
+                                <div class = "contact_ellipse">
+                                </div>
+                                <div class = "contact_lineRight">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "row mr-0 mb-0 ml-0 p-0 contact_content">
+                    <div class = "col-xl-6 col-12 m-0 p-0 d-flex justify-content-xl-start justify-content-center">
+
+                        <!-- Contact Info -->
+                        <div class = "contact_info">
+                            <h3>
+                                SHARE YOUR THOUGHTS
+                            </h3>
+                            <h4>
+                                If you have design ideas, or you are a frontend developer, be free to contact me.
+                            </h4>
+                            <div class = "d-flex justify-content-xl-start justify-content-center contact_mail">
+                                <div>
+                                    <img class = "img-fluid contact_mailIcon" src = "Images/Contact/Contact_Mail.png" alt = "Mail">
+                                    <h5>
+                                        jst2016@mail.com
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class = "d-flex justify-content-xl-start justify-content-center contact_phone">
+                                <div>
+                                    <img class = "img-fluid contact_phoneIcon" src = "Images/Contact/Contact_Phone.png" alt = "Phone">
+                                    <h5>
+                                        +387 65 520 406
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class = "d-flex justify-content-xl-start justify-content-center contact_location">
+                                <div>
+                                    <img class = "img-fluid contact_locationIcon" src = "Images/Contact/Contact_Location.png" alt = "Location">
+                                    <h5>
+                                        Banja Luka, BiH
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 d-flex justify-content-xl-end justify-content-center contact_data">
+                        <div class = "contact_dataContent">
+
+                            <!-- Contact Form -->
+                            <form class = "contact_f">
+                                <input type = "text" placeholder = "Name" class = "m-0 pt-0 pr-0 pb-0 contact_form">
+                                <input type = "email" placeholder = "Email" class = "contact_form">
+                                <textarea name = "message" placeholder = "Message" class = "contact_formMessage"></textarea>
+                                <input type = "submit" value = "Send" class = "contact_submit">
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- FOOTER -->
+            <section class = "footer">
+                <div class = "d-flex justify-content-center align-items-center h-100">
+                    <div class = "footer_content">
+                        <a href = "#">
+
+                            <!-- Logo -->
+                            <h2 class = "p-0 text-center">
+                                J<span class = "m-0 p-0">S</span> 
+                            </h2>
+
+                        </a>
+                        <div class = "d-flex justify-content-center footer_social">
+
+                            <!-- Social Icons -->
+                            <div>
+                                <a href = "#">
+                                    <img class = "img-fluid" src = "Images/Footer/Footer_Facebook.png" alt = "Facebook Logo">
+                                </a>
+                                <a href = "#">
+                                    <img class = "img-fluid footer_soc" src = "Images/Footer/Footer_Twitter.png" alt = "Twitter Logo">
+                                </a>
+                                <a href = "#">
+                                    <img class = "img-fluid footer_soc" src = "Images/Footer/Footer_Linkedin.png" alt = "Linkedin Logo">
+                                </a>
+                                <a href = "#">
+                                    <img class = "img-fluid footer_soc" src = "Images/Footer/Footer_Instagram.png" alt = "Instagram Logo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Copyright Info -->
+                        <h4 class = "text-center">
+                            JoX - Themes©, 2020 
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- JavaScript Connections -->
+        <script src = 'JS/jquery-3.4.1.min.js'>
+        </script>
+        <script src = 'JS/popper.min.js'>
+        </script>
+        <script src = 'JS/bootstrap.js'>
+        </script>
+        <script src = 'JS/bootstrap.min.js'>
+        </script>
+        <script src = 'JS/bootstrap.bundle.js'>
+        </script>
+        <script src = 'JS/bootstrap.bundle.min.js'>
+        </script>
+        <script src = 'JS/projects.js'>
+        </script>
+        <script src = 'JS/loading.js'>
+        </script>
+        <script src = 'JS/menu.js'>
+        </script>
+        <script src = 'JS/pageTop.js'>
+        </script>
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,193 @@
+/*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+
+
+/*  ***** FONTS *****  */
+@font-face {
+    font-family:archivo_narrow;
+    src:url("../Fonts/Archivo Narrow/ArchivoNarrow-Regular.ttf");
+}
+@font-face {
+    font-family:poppins;
+    src:url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+
+/*  ***** MIXINS *****  */
+@mixin h1 {
+    color:$light;
+    font-size:45px;
+    font-weight:bold;
+}
+@mixin h2 {
+    color:$light;
+    font-size:35px;
+}
+@mixin hide {
+    display:none;
+}
+
+
+/*  ***** VARIABLES *****  */
+$blue:#37ABBB;
+$light:#ffffff;
+$lightblue:rgba(183, 250, 242, 0.5);
+$lightdark:rgba(0,0,0,0.8);
+
+
+/*  ***** HOME *****  */
+.home {
+    @include hide;
+    background:url("../Images/Home/Home_Background.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-top:2px solid $blue;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    box-shadow:inset 0 0 0 4000px $lightdark;
+    height:100vh;
+    margin:0;
+    margin-top:50px;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    padding:0;
+    -webkit-background-size:cover;
+    width:90%;
+
+    /*  ***** Name *****  */
+    .home_developer {
+        font-family:poppins;
+        font-size:36px;
+        margin-top:16px;
+    }
+
+    /*  ***** Frontend Developer *****  */
+    .home_frontend {
+        color:$blue;
+        font-family:archivo_narrow;
+        font-size:25px;
+    }
+    h2 {
+        @include h2;
+    }
+
+    /*  ***** Hamburger Menu *****  */
+    .home_hamburger {
+        background:rgba(0,0,0,0.6);
+        cursor:pointer;
+        display:flex;
+        flex-direction:column;
+        height:50px;
+        justify-content:space-around;
+        padding:10px;
+        position:fixed;
+        right:122px;
+        top:57px;
+        visibility:hidden;
+        width:55px;
+        z-index:21;
+    }
+
+    /*  ***** Image *****  */
+    .home_image {
+        border:25px solid $lightblue;
+        border-radius:50%;
+        .home_man {
+            border:10px solid $blue;
+            border-radius:50%;
+        }
+    }
+
+    .home_info {
+        position:absolute;
+        top:50px;
+        width:90%;
+    }
+
+    .home_logo {
+        text-decoration:none;
+    }
+    .home_menu {
+        margin-right:96px;
+        z-index:4;
+        .home_ho {
+            display:none;
+        }
+    }
+
+    /*  ***** Logo *****  */
+    .home_portfolix {
+        font-family:poppins;
+        margin-bottom:57px;
+        margin-left:96px;
+        margin-top:50px;
+    }
+
+    .home_social {
+        margin-top:35px;
+        a {
+            &:hover {
+                text-decoration:none;
+            }
+        }
+    }
+    span {
+        color:$blue;
+        font-size:50px;
+    }
+
+    /*  ***** Navbar *****  */
+    ul {
+        color:$light;
+        list-style-type:none;
+        padding:0;
+        li {
+            display:inline-block;
+            h4 {
+                display:inline-block;
+                a {
+                    color:$light;
+                    font-family:archivo_narrow;
+                    margin:20px;
+                    &:hover {
+                        color:$blue;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.home_change .home_lineBottom {
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+.home_change .home_lineMiddle {
+    opacity:0;
+}
+.home_change .home_lineTop {
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+.home_change .home_menu {
+    left:calc(100% - 300px);
+}
